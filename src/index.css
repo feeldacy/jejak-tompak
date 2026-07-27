@@ -1,0 +1,114 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200..900&display=swap');
+
+:root {
+  color-scheme: light;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  @apply bg-white text-tompak-green-deep font-body antialiased;
+  background-image:
+    radial-gradient(
+      1200px 600px at 10% -10%,
+      rgba(140, 178, 122, 0.25),
+      transparent 60%
+    ),
+    radial-gradient(
+      900px 500px at 110% 10%,
+      rgba(165, 42, 42, 0.1),
+      transparent 60%
+    ),
+    radial-gradient(
+      1000px 600px at 50% 120%,
+      rgba(46, 91, 30, 0.15),
+      transparent 60%
+    );
+  background-attachment: fixed;
+  font-family: "Mulish", sans-serif;
+}
+
+.vollkorn-title {
+  font-family: "Vollkorn", serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+}
+
+/* Reusable glassmorphism panel */
+@layer components {
+  .glass {
+    @apply bg-white/50 backdrop-blur-xl border border-white/60 shadow-[0_8px_32px_rgba(26,51,15,0.08)];
+  }
+  .glass-dark {
+    @apply bg-white/10 backdrop-blur-xl border border-white/15 shadow-[0_8px_32px_rgba(0,0,0,0.25)];
+  }
+  .glass-soft {
+    @apply bg-white/35 backdrop-blur-lg border border-white/40;
+  }
+  .section-title {
+    @apply font-display font-bold tracking-tight text-tompak-green-deep;
+  }
+  .btn-glass {
+    @apply glass px-4 py-2 rounded-full text-sm font-medium transition duration-300 hover:bg-white/70 hover:scale-[1.03];
+  }
+  .divider-blend {
+    @apply h-24 w-full bg-gradient-to-b from-transparent via-white/40 to-transparent;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(46, 91, 30, 0.35);
+  border-radius: 999px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Focus styles */
+:focus-visible {
+  outline: 2px solid rgba(46, 91, 30, 0.6);
+  outline-offset: 2px;
+  border-radius: 6px;
+}
+
+.flow {
+  stroke-dasharray: 12;
+  animation: borderFlow 2s linear infinite;
+}
+
+@keyframes borderFlow {
+  from {
+    stroke-dashoffset: 0;
+  }
+  to {
+    stroke-dashoffset: -24;
+  }
+}
+
+#trail {
+  stroke-dasharray: 30 500;
+  animation: trailMove 2.5s linear infinite;
+  filter: drop-shadow(0 0 8px #6ee7b7);
+}
+
+@keyframes trailMove {
+  from {
+    stroke-dashoffset: 530;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
