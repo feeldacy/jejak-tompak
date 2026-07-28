@@ -5,22 +5,15 @@ export default function Footer({ language }) {
   const t = getT(language);
 
   return (
-    <footer className="relative mt-20">
-      {/* Blend layer */}
-      <div className="h-24 w-full bg-gradient-to-b from-transparent to-tompak-green-deep/95" />
-
+    <footer className="relative">
       <div className="relative bg-tompak-green-deep text-white">
-        {/* Glassmorphism overlay */}
-        <div className="absolute inset-0 bg-gradient-to-br from-tompak-green-deep via-tompak-green-deep to-tompak-brown-deep/40 opacity-90" />
-        <div className="absolute inset-0 backdrop-blur-md" />
-
         <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-14">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-10 text-center md:text-left">
             {/* Brand */}
             <div className="flex flex-col items-center md:items-start gap-3">
               <Link
                 to="/"
-                className="font-display font-bold tracking-tight text-2xl"
+                className="vollkorn-title font-display font-bold tracking-tight text-2xl"
               >
                 JEJAK <span className="text-tompak-green-soft">TOMPAK</span>
               </Link>
@@ -58,7 +51,6 @@ export default function Footer({ language }) {
               </ul>
             </div>
 
-            {/* Contact + social */}
             <div className="flex flex-col items-center md:items-start gap-3">
               <h4 className="font-display font-semibold text-white/90 uppercase tracking-wider text-xs">
                 {t.footer.contact}
