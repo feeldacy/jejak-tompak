@@ -1,5 +1,6 @@
 import { getT } from "../data/translations.js";
 import prawiraTani from "../assets/prawira-tani.jpg";
+import { Link } from "react-router-dom";
 
 export default function PrawiraTaniSection({ language }) {
   const t = getT(language).prawira;
@@ -28,8 +29,8 @@ export default function PrawiraTaniSection({ language }) {
             </p>
 
             <div className="mt-8 flex flex-wrap items-center gap-4">
-              <button
-                type="button"
+              <Link
+                to="/prawira-tani"
                 className="group inline-flex items-center gap-2 rounded-full bg-tompak-green-mid text-white font-semibold text-sm px-6 py-3 shadow-lg transition duration-300 hover:bg-tompak-green hover:scale-105"
               >
                 {t.cta}
@@ -47,7 +48,7 @@ export default function PrawiraTaniSection({ language }) {
                     strokeLinejoin="round"
                   />
                 </svg>
-              </button>
+              </Link>
 
               {/* Mini stats */}
               <div className="flex items-center gap-6">

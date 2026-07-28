@@ -25,12 +25,6 @@ export default function SejarahSection({ language }) {
             {t.title}
           </h2>
 
-          <div className="mx-auto mt-6 max-w-2xl glass-dark rounded-2xl border border-white/10 px-6 py-4 shadow-xl">
-            <p className="font-display italic text-lg md:text-xl text-white/90">
-              {t.motto}
-            </p>
-          </div>
-
           {/* Acronym grid — T·O·M·P·A·K */}
           {/* <div className="mt-8 grid grid-cols-3 md:grid-cols-6 gap-3 max-w-4xl mx-auto">
             {t.acronym.map((item) => (
@@ -61,9 +55,6 @@ export default function SejarahSection({ language }) {
                   className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-[1.04]"
                 />
               </div>
-              <div className="px-5 py-3 border-t border-white/10 bg-black/30 backdrop-blur-sm">
-                <p className="text-xs text-white/70 italic">{t.caption}</p>
-              </div>
             </div>
           </div>
 
@@ -85,8 +76,8 @@ export default function SejarahSection({ language }) {
                     onClick={() => setActiveTab(key)}
                     className={`relative px-4 py-2 rounded-full text-sm font-medium transition duration-300 border ${
                       isActive
-                        ? "bg-tompak-green-soft/20 border-tompak-green-soft/50 text-white"
-                        : "bg-white/5 border-white/10 text-white/70 hover:bg-white/10 hover:text-white"
+                        ? "bg-tompak-green-soft/70 border-tompak-green-soft text-white"
+                        : "bg-white/70 border-white/40 text-black hover:bg-white hover:text-black"
                     }`}
                   >
                     {t.tabs[key].label}
@@ -116,21 +107,6 @@ export default function SejarahSection({ language }) {
                   <p className="text-white/85 leading-relaxed text-base md:text-lg">
                     {tab.story}
                   </p>
-                  <div>
-                    <p className="text-[11px] uppercase tracking-widest text-white/50 mb-3">
-                      {language === "EN" ? "Sacred Sites" : "Situs Keramat"}
-                    </p>
-                    <div className="flex flex-wrap gap-2">
-                      {tab.locations.map((loc) => (
-                        <span
-                          key={loc}
-                          className="rounded-full border border-tompak-green-soft/30 bg-tompak-green-deep/30 px-3 py-1 text-xs text-white/85 backdrop-blur"
-                        >
-                          ◈ {loc}
-                        </span>
-                      ))}
-                    </div>
-                  </div>
                 </div>
               )}
 

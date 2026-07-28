@@ -35,12 +35,6 @@ export default function DokumentasiSection({ language }) {
       id="dokumentasi"
       className="relative py-28 overflow-hidden bg-white"
     >
-      {/* Blends */}
-      <div aria-hidden className="pointer-events-none absolute inset-0">
-        <div className="absolute inset-x-0 top-0 h-24 bg-gradient-to-b from-white to-transparent" />
-        <div className="absolute -bottom-32 left-1/2 h-80 w-[80%] -translate-x-1/2 rounded-full bg-tompak-green-mist/50 blur-3xl" />
-      </div>
-
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-2xl mx-auto">
           <h2 className="section-title text-3xl sm:text-4xl md:text-5xl">
@@ -67,7 +61,6 @@ export default function DokumentasiSection({ language }) {
                 loading="lazy"
                 className="h-full w-full object-cover transition duration-700 group-hover:scale-110"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-tompak-green-deep/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition duration-500" />
               <figcaption className="absolute bottom-3 left-3 right-3 text-xs text-white/90 font-medium opacity-0 group-hover:opacity-100 translate-y-2 group-hover:translate-y-0 transition duration-500">
                 {photo.alt}
               </figcaption>

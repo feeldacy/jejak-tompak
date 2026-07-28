@@ -4,6 +4,7 @@ import Header from "./components/Header.jsx";
 import Footer from "./components/Footer.jsx";
 import MainPage from "./pages/MainPage.jsx";
 import ArticlePage from "./pages/ArticlePage.jsx";
+import PrawiraTaniPage from "./pages/PrawiraTaniPage.jsx";
 
 export default function App() {
   const [language, setLanguage] = useState(() => {
@@ -44,6 +45,7 @@ export default function App() {
         <Routes>
           <Route path="/" element={<MainPage language={language} />} />
           <Route path="/artikel/:id" element={<ArticlePage />} />
+          <Route path="/prawira-tani" element={<PrawiraTaniPage />} />
         </Routes>
       </main>
 
