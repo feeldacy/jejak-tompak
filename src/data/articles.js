@@ -5,6 +5,10 @@
 // sort key, so it must be unique per article. If two articles ever share a
 // publish day, disambiguate by adding a time suffix or a short slug segment.
 
+// how to import image
+// import imageTitle from "../assets/articles/imageTitle.jpg";
+
+
 const INDO_MONTHS = [
   "Januari",
   "Februari",
@@ -40,7 +44,7 @@ const rawArticles = [
       ID: "Menyusuri kebun kopi di lereng bukit Tompak, tempat setiap biji dipetik dengan tangan dan cerita.",
       EN: "A walk through the coffee gardens on the slopes of Tompak, where every bean is hand-picked along with its story.",
     },
-    image:
+    image: // image title add here
       "https://images.unsplash.com/photo-1447933601403-0c6688de566e?auto=format&fit=crop&w=1200&q=80",
     body: [
       "Pagi baru saja menyingsing ketika kami tiba di kebun kopi milik Pak Rusli, seorang Prawira Tani generasi ketiga. Di antara kabut tipis, deretan pohon kopi arabika menjulur menyusuri kontur bukit — hijau, rapat, dan hidup.",
@@ -48,7 +52,7 @@ const rawArticles = [
       "Proses panen di sini masih dilakukan dengan tangan. Buah ceri merah dipetik satu per satu, dipilah, kemudian dijemur di atas para-para bambu selama beberapa hari. Cara ini memakan waktu, tetapi memberi karakter khas pada seduhan akhirnya — aroma tanah hangat dengan sentuhan cokelat pahit dan sedikit manis di ujung lidah.",
       "Kebun kopi ini juga menjadi rumah bagi ratusan spesies burung dan serangga. Sistem tanam agroforestri yang diadopsi Prawira Tani membuat kopi tumbuh berdampingan dengan pohon peneduh, tanaman rempah, dan buah-buahan lokal. Ekosistem ini bukan hanya menjaga cita rasa kopi, tetapi juga menjaga tanah agar tetap subur untuk generasi berikutnya.",
       'Menjelang sore, kami duduk di teras kayu sambil menikmati kopi terakhir hari itu. Di kejauhan, kabut mulai turun kembali ke lembah. "Kopi Tompak," kata Pak Rusli pelan, "adalah cara kami bercerita kepada dunia tanpa harus banyak bicara."',
-    ],
+    ], // every new paragprah add coma
   },
   {
     publishedAt: "2024-08-28",
