@@ -1,9 +1,37 @@
 // Article data used both on the main page cards and the full article pages.
 // Content is in Indonesian only (as specified: article page does not require translation).
-export const articles = [
+//
+// `publishedAt` is an ISO date (YYYY-MM-DD). It doubles as the URL slug and the
+// sort key, so it must be unique per article. If two articles ever share a
+// publish day, disambiguate by adding a time suffix or a short slug segment.
+
+const INDO_MONTHS = [
+  "Januari",
+  "Februari",
+  "Maret",
+  "April",
+  "Mei",
+  "Juni",
+  "Juli",
+  "Agustus",
+  "September",
+  "Oktober",
+  "November",
+  "Desember",
+];
+
+// Format ISO date (YYYY-MM-DD) into Indonesian long form: "12 September 2024"
+export const formatIndoDate = (iso) => {
+  if (!iso) return "";
+  const [y, m, d] = iso.split("-");
+  const monthIdx = parseInt(m, 10) - 1;
+  const month = INDO_MONTHS[monthIdx] ?? "";
+  return `${parseInt(d, 10)} ${month} ${y}`;
+};
+
+const rawArticles = [
   {
-    id: "1",
-    date: "12 September 2024",
+    publishedAt: "2024-09-12",
     title: {
       ID: "Menjelajahi Kopi Tompak",
       EN: "Exploring Tompak Coffee",
@@ -23,8 +51,7 @@ export const articles = [
     ],
   },
   {
-    id: "2",
-    date: "28 Agustus 2024",
+    publishedAt: "2024-08-28",
     title: {
       ID: "Prawira Tani: Wajah Muda Tanah Tompak",
       EN: "Prawira Tani: The Young Face of Tompak",
@@ -44,8 +71,7 @@ export const articles = [
     ],
   },
   {
-    id: "3",
-    date: "15 Agustus 2024",
+    publishedAt: "2024-08-15",
     title: {
       ID: "Batu-Batu yang Berbicara",
       EN: "Stones That Speak",
@@ -66,4 +92,12 @@ export const articles = [
   },
 ];
 
-export const getArticleById = (id) => articles.find((a) => a.id === String(id));
+// Sorted newest-first. This is the single source of truth for article order —
+// dashboard slicing and prev/next navigation both rely on it.
+export const articles = [...rawArticles].sort((a, b) =>
+  b.publishedAt.localeCompare(a.publishedAt),
+);
+
+// Look up an article by its ISO publish date (used as the URL slug).
+export const getArticleByDate = (date) =>
+  articles.find((a) => a.publishedAt === date);

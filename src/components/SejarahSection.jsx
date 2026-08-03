@@ -2,7 +2,7 @@ import { getT } from "../data/translations.js";
 import imageBg from "../assets/IMG_0760.jpg";
 import { useState } from "react";
 
-const TAB_KEYS = ["asalUsul", "legenda", "agraris"];
+const TAB_KEYS = ["sejarah","asalUsul", "watutompak", "filosofi"];
 
 export default function SejarahSection({ language }) {
   const t = getT(language).sejarah;
@@ -24,23 +24,6 @@ export default function SejarahSection({ language }) {
           <h2 className="mt-4 font-display font-bold text-3xl vollkorn-title sm:text-4xl md:text-5xl tracking-tight text-white leading-tight">
             {t.title}
           </h2>
-
-          {/* Acronym grid — T·O·M·P·A·K */}
-          {/* <div className="mt-8 grid grid-cols-3 md:grid-cols-6 gap-3 max-w-4xl mx-auto">
-            {t.acronym.map((item) => (
-              <div
-                key={item.letter}
-                className="group rounded-2xl border border-white/10 bg-white/5 backdrop-blur-md px-3 py-4 text-center transition duration-300 hover:bg-white/10 hover:border-tompak-green-soft/40 hover:-translate-y-0.5"
-              >
-                <div className="font-display font-bold text-3xl md:text-4xl text-tompak-green-soft">
-                  {item.letter}
-                </div>
-                <div className="mt-1 text-[11px] uppercase tracking-widest text-white/70">
-                  {item.word}
-                </div>
-              </div>
-            ))}
-          </div> */}
         </div>
 
         <div className="mt-16 grid grid-cols-1 lg:grid-cols-5 gap-10 lg:gap-14 items-start">
@@ -91,6 +74,16 @@ export default function SejarahSection({ language }) {
 
             {/* Tab panels */}
             <div className="mt-8 min-h-[280px]">
+              {activeTab === "sejarah" && (
+                <div className="space-y-4 animate-[fadeIn_0.5s_ease-out]">
+                  <p className="text-white/85 leading-relaxed text-base md:text-lg">
+                    {tab.p1}
+                  </p>
+                  <p className="text-white/85 leading-relaxed text-sm md:text-base">
+                    {tab.p2}
+                  </p>
+                </div>
+              )}
               {activeTab === "asalUsul" && (
                 <div className="space-y-4 animate-[fadeIn_0.5s_ease-out]">
                   <p className="text-white/85 leading-relaxed text-base md:text-lg">
@@ -102,7 +95,7 @@ export default function SejarahSection({ language }) {
                 </div>
               )}
 
-              {activeTab === "legenda" && (
+              {activeTab === "watutompak" && (
                 <div className="space-y-6 animate-[fadeIn_0.5s_ease-out]">
                   <p className="text-white/85 leading-relaxed text-base md:text-lg">
                     {tab.story}
@@ -110,7 +103,7 @@ export default function SejarahSection({ language }) {
                 </div>
               )}
 
-              {activeTab === "agraris" && (
+              {activeTab === "filosofi" && (
                 <div className="space-y-4 animate-[fadeIn_0.5s_ease-out]">
                   <p className="text-white/85 leading-relaxed text-base md:text-lg">
                     {tab.content}

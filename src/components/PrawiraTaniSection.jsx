@@ -7,12 +7,7 @@ export default function PrawiraTaniSection({ language }) {
 
   return (
     <section id="prawira" className="relative py-28 overflow-hidden bg-white">
-      {/* Soft blends */}
-      <div aria-hidden className="pointer-events-none absolute inset-0">
-        <div className="absolute top-10 left-1/4 h-72 w-72 rounded-full bg-tompak-green-mist/70 blur-3xl" />
-        <div className="absolute bottom-10 right-1/4 h-72 w-72 rounded-full bg-tompak-brown-soft/20 blur-3xl" />
-      </div>
-
+      
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           {/* Text */}
@@ -49,27 +44,6 @@ export default function PrawiraTaniSection({ language }) {
                   />
                 </svg>
               </Link>
-
-              {/* Mini stats */}
-              <div className="flex items-center gap-6">
-                <div>
-                  <p className="font-display font-bold text-2xl text-tompak-green-mid">
-                    120+
-                  </p>
-                  <p className="text-[11px] uppercase tracking-widest text-tompak-green-deep/60">
-                    Prawira
-                  </p>
-                </div>
-                <div className="h-8 w-px bg-tompak-green-deep/15" />
-                <div>
-                  <p className="font-display font-bold text-2xl text-tompak-green-mid">
-                    8
-                  </p>
-                  <p className="text-[11px] uppercase tracking-widest text-tompak-green-deep/60">
-                    Desa
-                  </p>
-                </div>
-              </div>
             </div>
           </div>
 

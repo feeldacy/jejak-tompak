@@ -41,7 +41,7 @@ export default function AboutTompakSection({ language }) {
     <section
       ref={sectionRef}
       id="tentang"
-      className="relative py-28 overflow-hidden bg-white"
+      className="relative min-h-[70vh] flex items-center py-32 lg:py-40 overflow-hidden bg-white"
     >
       {/* Soft edge blends */}
       <div aria-hidden className="pointer-events-none absolute inset-0">
@@ -51,18 +51,24 @@ export default function AboutTompakSection({ language }) {
         <div className="absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-white/80 to-transparent" />
       </div>
 
-      <div className="relative mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
+      <div className="relative mx-auto max-w-8xl px-6 sm:px-8 lg:px-10">        
         <h2
           ref={headingRef}
-          className="section-title vollkorn-title text-center text-3xl sm:text-4xl md:text-5xl max-w-3xl mx-auto"
+          className="section-title vollkorn-title text-center text-3xl sm:text-4xl md:text-5xl max-w-2xl mx-auto"
         >
           {t.title}
         </h2>
         <p
           ref={descRef}
-          className="mt-6 text-center text-base md:text-lg text-tompak-green-deep/70 max-w-2xl mx-auto leading-relaxed"
+          className="mt-6 text-center text-base md:text-lg text-tompak-green-deep/70 max-w-3xl lg:max-w-6xl mx-auto leading-relaxed"
         >
-          {t.description}
+          {t.paragraph1}
+        </p>
+        <p
+          ref={descRef}
+          className="mt-6 text-center text-base md:text-lg text-tompak-green-deep/70 max-w-3xl lg:max-w-6xl mx-auto leading-relaxed"
+        >
+          {t.paragraph2}
         </p>
       </div>
     </section>
