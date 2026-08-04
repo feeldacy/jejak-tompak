@@ -43,6 +43,13 @@ body {
   font-style: normal;
 }
 
+.vollkorn-subtitle {
+  font-family: "Vollkorn", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
 /* Reusable glassmorphism panel */
 @layer components {
   .glass {

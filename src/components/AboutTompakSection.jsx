@@ -41,7 +41,7 @@ export default function AboutTompakSection({ language }) {
     <section
       ref={sectionRef}
       id="tentang"
-      className="relative min-h-[70vh] flex items-center py-32 lg:py-40 overflow-hidden bg-white"
+      className="relative min-h-[70vh] flex items-center pt-32 lg:pt-40 pb-12 lg:pb-16 overflow-hidden bg-white"
     >
       {/* Soft edge blends */}
       <div aria-hidden className="pointer-events-none absolute inset-0">
@@ -51,10 +51,10 @@ export default function AboutTompakSection({ language }) {
         <div className="absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-white/80 to-transparent" />
       </div>
 
-      <div className="relative mx-auto max-w-8xl px-6 sm:px-8 lg:px-10">        
+      <div className="relative mx-auto max-w-8xl px-6 sm:px-8 lg:px-10">
         <h2
           ref={headingRef}
-          className="section-title vollkorn-title text-center text-3xl sm:text-4xl md:text-5xl max-w-2xl mx-auto"
+          className="vollkorn-title text-center text-3xl sm:text-5xl md:text-6xl max-w-2xl mx-auto"
         >
           {t.title}
         </h2>

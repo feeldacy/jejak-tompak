@@ -25,8 +25,10 @@ export const translations = {
         "Seperti Watu Tompak yang tidak bisa dijauhkan dari tempatnya, ada tempat-tempat yang tidak pernah benar-benar kita tinggalkan. Tempat yang terus hidup dalam ingatan, sejarah, dan cerita yang diwariskan dari generasi ke generasi. Tompak adalah salah satunya, sebuah dusun yang mengajarkan bahwa kembali bukan hanya pulang, melainkan juga mengenang asal, menjaga warisan, dan mengembangkan potensi yang ada. Di sinilah nilai kehidupan bertemu dalam satu jejak, menjadikan Tompak sebagai titik temu keimanan, alam, dan sejarah yang akan selalu hidup setiap waktu.",
       paragraph2:
         "Berada di sekitar Perbukitan Menoreh, Tompak berdiri di tanah yang subur, udara yang sejuk, dan dikelilingi kelestarian alam melimpah yang menjadi sumber penghidupan dan terus dijaga oleh masyarakatnya. Dari mata air yang menghidupi hingga hamparan perkebunan yang menguatkan perekonomian, alam telah menjadi bagian yang tak terpisahkan dari kehidupan sehari-hari. Kehidupan yang tumbuh berdampingan dengan alam inilah yang membentuk karakter masyarakat Tompak.",
-      statLabelPopulation: "Warga",
-      statLabelVillages: "Desa",
+      luasDusun: "Luas Dusun",
+      jumlahrt: "Jumlah RT",
+      jumlahrw: "Jumlah RW",
+      jumlahkk: "Jumlah KK",
       statLabelCommodities: "Komoditas Utama",
     },
     sejarah: {
@@ -43,54 +45,47 @@ export const translations = {
       ],
       tabs: {
         sejarah: {
-          label: "Asal-Usul & Nama",
-          p1: "Di antara luasnya perbukitan Menoreh yang menjadi perbatasan Jawa Tengah dan Daerah Istimewa Yogyakarta, terdapat sebuah desa yang menyimpan cerita yang diwarisi secara turun-temurun dan memiliki cita-cita yang cukup besar. Desa Tompak, yang secara administratif berada di Kalurahan Giripurwo, Kecamatan Girimulyo, Kabupaten Kulon Progo, lahir sekitar tahun 1900-an dan hingga kini tetap menjaga budaya serta tradisi leluhurnya.",
-          p2: 'Nama "Tompak" sendiri berakar dari kata "Tumpak" atau "Tumpang", yang menggambarkan dua bongkahan Watu Tompak yang saling bertumpuk. Seiring bertambahnya waktu, penduduk di sekitar Watu Tompak semakin bertambah, hingga masyarakat mengangkat Ki Joyodiharjo sebagai pemimpin pertama. Wilayah ini pun dikenal sebagai Dusun Tumpak, dan baru resmi dipatenkan menjadi "Tompak" pada tahun 1992 oleh Mbah Besut, seorang tokoh seni dari Jogja, setelah desa ini memenangkan lomba tingkat provinsi.',
+          label: "Tentang Tompak",
+          p1: "Di antara luasnya perbukitan Menoreh yang menjadi perbatasan Jawa Tengah dan Daerah Istimewa Yogyakarta, terdapat sebuah desa yang menyimpan cerita yang diwarisi secara turun-temurun dan memiliki cita-cita yang cukup besar.",
+          p2: 'Desa Tompak, yang secara administratif berada di Kalurahan Giripurwo, Kecamatan Girimulyo, Kabupaten Kulon Progo, Daerah Istimewa Yogyakarta, lahir sekitar tahun 1900-an dan hingga kini tetap menjaga budaya serta tradisi leluhurnya, yang sampai saat ini dijadikan bekal masyarakat Tompak untuk melangkah maju ke depannya.',
         },
         asalUsul: {
-          label: "Asal-Usul & Nama",
-          p1: "Di antara luasnya perbukitan Menoreh yang menjadi perbatasan Jawa Tengah dan Daerah Istimewa Yogyakarta, terdapat sebuah desa yang menyimpan cerita yang diwarisi secara turun-temurun dan memiliki cita-cita yang cukup besar. Desa Tompak, yang secara administratif berada di Kalurahan Giripurwo, Kecamatan Girimulyo, Kabupaten Kulon Progo, lahir sekitar tahun 1900-an dan hingga kini tetap menjaga budaya serta tradisi leluhurnya.",
-          p2: 'Nama "Tompak" sendiri berakar dari kata "Tumpak" atau "Tumpang", yang menggambarkan dua bongkahan Watu Tompak yang saling bertumpuk. Seiring bertambahnya waktu, penduduk di sekitar Watu Tompak semakin bertambah, hingga masyarakat mengangkat Ki Joyodiharjo sebagai pemimpin pertama. Wilayah ini pun dikenal sebagai Dusun Tumpak, dan baru resmi dipatenkan menjadi "Tompak" pada tahun 1992 oleh Mbah Besut, seorang tokoh seni dari Jogja, setelah desa ini memenangkan lomba tingkat provinsi.',
+          label: "Asal Usul Nama Tompak",
+          p1: 'Nama "Tompak" sendiri berakar dari kata "Tumpak" atau "Tumpang", yang menggambarkan dua bongkahan Watu Tompak yang saling bertumpuk. Setiap huruf dari "Tompak" juga memiliki maknanya tersendiri yang secara garis besar bermakna semangat untuk terus bergerak, bekerja, dan berbuat baik hingga berkecukupan.',
+          p2: 'Seiring bertambahnya waktu, penduduk di sekitar Watu Tompak semakin bertambah, sehingga masyarakat pun mengangkat salah satu penduduk menjadi pemimpin pertama mereka, yaitu Ki Joyodiharjo. Wilayah ini kemudian dikenal sebagai Dusun Tumpak. Nama tersebut baru resmi dipatenkan menjadi "Tompak" pada tahun 1992 oleh Pak Besut, seorang tokoh Budayawan Jogja, setelah desa ini memenangkan lomba tingkat provinsi pada saat itu. Momen inilah yang menandai pergantian nama secara resmi dari Dusun Tumpak menjadi Tompak, seperti yang dikenal hingga sekarang.',
         },
         watutompak: {
-          label: "Legenda 4 Ksatria",
-          story:
-            "Konon, empat ksatria dari kerajaan yang berbeda pernah singgah di tanah Menoreh. Mereka bertemu di sebuah batu besar yang saling bertumpuk — Watu Tompak — dan berikrar untuk menjaga tanah ini. Setiap ksatria meninggalkan jejak yang kemudian menjadi tempat keramat: Watu Jendul sebagai pos pertama, Padasan sebagai sumber pembersihan, Belik Suko sebagai mata air kebahagiaan, dan Watu Muncen sebagai batu penanda. Konon pula, jika salah satu batu dipindahkan dari tempatnya, ia akan kembali sendiri esok harinya — sebuah pengingat bahwa tanah Tompak tak pernah bisa dipisahkan dari jiwa penjaganya.",
-          locations: [
-            "Watu Jendul",
-            "Padasan",
-            "Belik Suko",
-            "Watu Muncen",
-            "Belik Sengon",
-          ],
+          label: "Kisah Watu Tompak dan Empat Kesatria",
+          p1: 'Sebagai sebuah ikon desa, Watu Tompak memiliki kisah perjalanannya tersendiri. Diceritakan, ada empat kesatria yang sedang melakukan perjalanan, yaitu Ki Joko Lelono, Ki Joko Desono, Ki Dipontani, dan Ki Dipo Karyo. Dalam perjalanannya, mereka berhenti di sebuah batu menonjol yang kini disebut Watu Jendul untuk bertirakat atau beribadah. Sebelum beribadah, keempat kesatria itu mencari sumber air untuk mensucikan diri ke arah utara, dan menemukan mata air yang disebut "Padasan"',
+          p2: 'Keesokan paginya, mereka menemukan sebuah batu pecah yang saling bertumpuk, yang dipercaya dijaga oleh makhluk gaib, lalu mereka gelindingkan bongkahan batu paling atas ke jurang di dekatnya. Setelah kejadian itu, mereka melanjutkan perjalanan ke utara, di mana mereka menemukan sebuah mata air yang kemudian dinamai "Belik Suko". Sesampainya di sebuah tempat bernama Watu Muncen, mereka kembali beristirahat dan menyempatkan diri beribadah di batu tersebut serta bersuci di mata air "Belik Sengon" yang tidak jauh dari situ.',
+          p3: 'Tidak lama setelah melaksanakan ibadah, mereka mendengar suara dari arah batu yang sebelumnya digelindingkan. Mereka pun terkejut melihat batu yang mereka gulingkan telah kembali menumpuk di tempat semula. Dari sinilah batu itu diberi nama Watu Tompak, sebagaimana disepakati oleh keempat kesatria tersebut, dan Ki Joko Desono, salah satu di antara mereka, memutuskan untuk mengabdi di tempat ini. Kisah perjalanan empat kesatria inilah yang menjadi pondasi keimanan yang diwariskan dan terus dipegang teguh oleh warga Desa Tompak hingga saat ini.',
         },
         filosofi: {
           label: "Jiwa Agraris",
-          content:
-            "Di lereng-lereng perbukitan Menoreh, masyarakat Tompak hidup dari tanah — menanam kopi, kayu manis, dan menjaga hutan yang menaunginya. Etos gotong royong dan semangat “Topong Rame” diwariskan turun-temurun: siapa pun yang menghadapi kesulitan wajib ditolong. Kini, para pemuda Prawira Tani menggabungkan kearifan lokal dengan pengetahuan modern, membawa cita-cita agraris Tompak melangkah menuju masa depan yang berkelanjutan.",
+          p1: 'Selain itu, dengan kekayaan alam yang dimilikinya, Tompak dikenal sebagai desa dengan jiwa agraris yang kuat. Bertani bukan sekadar mata pencaharian, melainkan bagian dari gaya hidup yang tak lepas dari keseharian warganya. Dari generasi ke generasi, tanah-tanah yang berada di lereng Menoreh ini diolah dengan penuh ketekunan, menghasilkan sumber daya yang menjadi sumber kehidupan sekaligus identitas desa.',
+          p2: 'Semangat dan solidaritas yang dimiliki warganya, dari yang tua hingga para pemudanya, membuat kekayaan yang dimiliki Desa Tompak, mulai dari sejarah, budaya, dan alamnya yang berlimpah dapat tetap terjaga dan terlestarikan dengan baik. Cita-cita besar yang dimiliki warganya pun menjadi alasan untuk terus memajukan dan mengharumkan nama Desa Tompak. "Topong Rame" atau "Siapa Mendapat Kesulitan Harus Kamu Tolong".'
         },
       },
     },
     komoditas: {
-      eyebrow: "Kekayaan Tanah",
-      title: "Komoditas",
+      title: "KOMODITAS TOMPAK",
       description:
-        "Tiga komoditas utama yang tumbuh dan berkembang di tanah Tompak.",
+        "Tiga komoditas utama yang tumbuh subur di tanah Tompak:",
       items: [
         {
-          title: "Kopi Tompak",
+          title: "Kakao",
           description:
-            "Biji kopi arabika dengan aroma tanah hangat dan sentuhan cokelat pahit.",
+            "Ditanam di tanah Menoreh yang subur, kakao Tompak menghasilkan biji cokelat berkualitas dan cita rasa yang khas.",
         },
         {
-          title: "Kayu Manis",
+          title: "Tanaman Rimpang",
           description:
-            "Kulit kayu wangi yang menjadi rempah khas dataran tinggi Tompak.",
+            "Kekayaan alam berupa lengkuas, jahe, kencur, temulawak, dan kunyit ini tumbuh melimpah di tanah Tompak dan lebih akrab disebut sebagai empon-empon oleh masyarakatnya.",
         },
         {
-          title: "Madu Hutan",
+          title: "Pisang",
           description:
-            "Madu liar dari lebah hutan yang dijaga oleh masyarakat adat.",
+            "Tumbuh subur di kebun-kebun warga, pisang menjadi hasil kebun andalan yang dimanfaatkan sebagai pangan sekaligus sumber penghidupan para warga.",
         },
       ],
     },

@@ -5,6 +5,7 @@ import {
   formatIndoDate,
 } from "../data/articles.js";
 import SharedPageLayout from "../components/SharedPageLayout.jsx";
+import ArticleRenderer from "../components/articles/ArticleRenderer.jsx";
 
 export default function ArticlePage() {
   const { date } = useParams();
@@ -158,14 +159,18 @@ export default function ArticlePage() {
         </span>
       </div>
 
-      {/* Body paragraphs */}
-      <div className="prose prose-lg max-w-none text-tompak-green-deep/80 space-y-5">
-        {article.body.map((para, i) => (
-          <p key={i} className="leading-[1.85] text-base md:text-[1.05rem]">
-            {para}
-          </p>
-        ))}
-      </div>
+      {/* Article content — block-based (content) or legacy paragraphs (body) */}
+      {article.content ? (
+        <ArticleRenderer blocks={article.content} />
+      ) : (
+        <div className="prose prose-lg max-w-none text-tompak-green-deep/80 space-y-5">
+          {article.body.map((para, i) => (
+            <p key={i} className="leading-[1.85] text-base md:text-[1.05rem]">
+              {para}
+            </p>
+          ))}
+        </div>
+      )}
     </SharedPageLayout>
   );
 }
