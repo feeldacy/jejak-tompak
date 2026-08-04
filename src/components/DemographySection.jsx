@@ -11,9 +11,10 @@ export default function DemographySection({ language }) {
   const hasAnimated = useRef(false);
 
   const stats = [
-    { icon: "◉", value: "12.400+", label: t.statLabelPopulation },
-    { icon: "◉", value: "8", label: t.statLabelVillages },
-    { icon: "◉", value: "3", label: t.statLabelCommodities },
+    { icon: "◉", value: "73.93 Ha", label: t.luasDusun },
+    { icon: "◉", value: "2 RW ", label: t.jumlahrw },
+    { icon: "◉", value: "5 RT ", label: t.jumlahrt },
+    { icon: "◉", value: "±90 Kartu Keluarga", label: t.jumlahkk },
   ];
 
   useEffect(() => {
@@ -61,7 +62,7 @@ export default function DemographySection({ language }) {
     <section
       ref={sectionRef}
       id="demografi"
-      className="relative py-24 overflow-hidden bg-white"
+      className="relative pt-8 lg:pt-12 pb-24 overflow-hidden bg-white"
     >
       <div className="relative mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 lg:gap-16 items-center">
@@ -86,7 +87,7 @@ export default function DemographySection({ language }) {
                       {s.icon}
                     </span>
                     <div className="flex-1">
-                      <p className="font-display font-bold text-2xl text-tompak-green-mid leading-none">
+                      <p className="font-display vollkorn-title font-bold text-2xl text-tompak-green-mid leading-none">
                         {s.value}
                       </p>
                       <p className="mt-1 text-[11px] uppercase tracking-widest text-tompak-green-deep/60 font-medium">

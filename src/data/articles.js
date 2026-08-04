@@ -6,15 +6,11 @@
 // publish day, disambiguate by adding a time suffix or a short slug segment.
 
 // how to import image
-import Biopest from "../assets/Biopest/Bio0.jpg";
-import Biopest from "../assets/Biopest/Bio1.jpg";
-import Biopest from "../assets/Biopest/Bio2.jpg";
-import Biopest from "../assets/Biopest/Bio3.jpg";
-import Biopest from "../assets/Biopest/Bio4.jpg";
-import Biopest from "../assets/Biopest/Bio5.jpg";
-import Biopest from "../assets/Biopest/Bio6.jpg";
-import Biopest from "../assets/Biopest/Bio7.jpg";
+// import imageTitle from "../assets/articles/imageTitle.jpg";
 
+// Block-based article content (rich articles use `content` array instead of `body`)
+import { cocoaProcessingContent } from "./articleContents/cocoa-processing.js";
+import { villageProfileContent } from "./articleContents/village-profile.js";
 
 const INDO_MONTHS = [
   "Januari",
@@ -42,7 +38,39 @@ export const formatIndoDate = (iso) => {
 
 const rawArticles = [
   {
-    publishedAt: "2026-08-03",
+    publishedAt: "2024-10-05",
+    slug: "profil-desa-tompak",
+    title: {
+      ID: "Profil Desa Tompak",
+      EN: "Tompak Village Profile",
+    },
+    snippet: {
+      ID: "Mengenal lebih dekat desa Tompak — geografi, sejarah, dan kehidupan masyarakatnya yang kaya akan budaya.",
+      EN: "A closer look at Tompak village — its geography, history, and culturally rich community life.",
+    },
+    image:
+      "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=1200&q=80",
+    category: "Profil",
+    content: villageProfileContent,
+  },
+  {
+    publishedAt: "2024-09-20",
+    slug: "pengolahan-kakao-tompak",
+    title: {
+      ID: "Dari Biji ke Cokelat: Pengolahan Kakao Tompak",
+      EN: "From Bean to Chocolate: Tompak Cocoa Processing",
+    },
+    snippet: {
+      ID: "Mengikuti perjalanan biji kakao Tompak dari pohon hingga menjadi cokelat berkualitas tinggi.",
+      EN: "Following the journey of Tompak cocoa beans from tree to high-quality chocolate.",
+    },
+    image:
+      "https://images.unsplash.com/photo-1606312619070-d48b4c652a52?auto=format&fit=crop&w=1200&q=80",
+    category: "Komoditas",
+    content: cocoaProcessingContent,
+  },
+  {
+    publishedAt: "2024-09-12",
     title: {
       ID: "Galangal for Farmers: Solusi Ramah Lingkungan Lawan Helopeltis",
       EN: "Galangal for Farmers: An Environmentally Friendly Solution Against Helopeltis",
