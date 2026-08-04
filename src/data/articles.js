@@ -8,6 +8,9 @@
 // how to import image
 // import imageTitle from "../assets/articles/imageTitle.jpg";
 
+// Block-based article content (rich articles use `content` array instead of `body`)
+import { cocoaProcessingContent } from "./articleContents/cocoa-processing.js";
+import { villageProfileContent } from "./articleContents/village-profile.js";
 
 const INDO_MONTHS = [
   "Januari",
@@ -35,6 +38,38 @@ export const formatIndoDate = (iso) => {
 
 const rawArticles = [
   {
+    publishedAt: "2024-10-05",
+    slug: "profil-desa-tompak",
+    title: {
+      ID: "Profil Desa Tompak",
+      EN: "Tompak Village Profile",
+    },
+    snippet: {
+      ID: "Mengenal lebih dekat desa Tompak — geografi, sejarah, dan kehidupan masyarakatnya yang kaya akan budaya.",
+      EN: "A closer look at Tompak village — its geography, history, and culturally rich community life.",
+    },
+    image:
+      "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=1200&q=80",
+    category: "Profil",
+    content: villageProfileContent,
+  },
+  {
+    publishedAt: "2024-09-20",
+    slug: "pengolahan-kakao-tompak",
+    title: {
+      ID: "Dari Biji ke Cokelat: Pengolahan Kakao Tompak",
+      EN: "From Bean to Chocolate: Tompak Cocoa Processing",
+    },
+    snippet: {
+      ID: "Mengikuti perjalanan biji kakao Tompak dari pohon hingga menjadi cokelat berkualitas tinggi.",
+      EN: "Following the journey of Tompak cocoa beans from tree to high-quality chocolate.",
+    },
+    image:
+      "https://images.unsplash.com/photo-1606312619070-d48b4c652a52?auto=format&fit=crop&w=1200&q=80",
+    category: "Komoditas",
+    content: cocoaProcessingContent,
+  },
+  {
     publishedAt: "2024-09-12",
     title: {
       ID: "Menjelajahi Kopi Tompak",
@@ -44,7 +79,8 @@ const rawArticles = [
       ID: "Menyusuri kebun kopi di lereng bukit Tompak, tempat setiap biji dipetik dengan tangan dan cerita.",
       EN: "A walk through the coffee gardens on the slopes of Tompak, where every bean is hand-picked along with its story.",
     },
-    image: // image title add here
+    // image title add here
+    image:
       "https://images.unsplash.com/photo-1447933601403-0c6688de566e?auto=format&fit=crop&w=1200&q=80",
     body: [
       "Pagi baru saja menyingsing ketika kami tiba di kebun kopi milik Pak Rusli, seorang Prawira Tani generasi ketiga. Di antara kabut tipis, deretan pohon kopi arabika menjulur menyusuri kontur bukit — hijau, rapat, dan hidup.",
