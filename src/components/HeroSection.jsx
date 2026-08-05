@@ -77,14 +77,14 @@ export default function HeroSection({ language }) {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 mx-auto max-w-4xl px-6 text-center">
+      <div className="relative z-10 mx-auto max-w-7xl px-6 text-center">
         {/* Title */}
         <h1 className="font-display vollkorn-title font-bold text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-white leading-[1.08] tracking-tight drop-shadow-lg animate-fade-up [animation-delay:400ms]">
           {t.title}
         </h1>
 
         {/* Subtitle */}
-        <p className="mt-6 text-base sm:text-lg md:text-xl text-white/85 max-w-2xl mx-auto leading-relaxed animate-fade-up [animation-delay:600ms]">
+        <p className="mt-6 text-base sm:text-lg md:text-xl text-white/85 max-w-4xl mx-auto leading-relaxed animate-fade-up [animation-delay:600ms]">
           {t.subtitle}
         </p>
 

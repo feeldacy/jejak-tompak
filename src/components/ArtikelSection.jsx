@@ -1,9 +1,12 @@
 import { Link } from "react-router-dom";
 import { getT } from "../data/translations.js";
-import { articles } from "../data/articles.js";
+import { articles, formatIndoDate } from "../data/articles.js";
 
 export default function ArtikelSection({ language }) {
   const t = getT(language).artikel;
+  // Dashboard shows only the three most recent articles.
+  // `articles` is already sorted newest-first in articles.js.
+  const latestArticles = articles.slice(0, 3);
 
   return (
     <section id="artikel" className="relative py-28 overflow-hidden">
@@ -26,16 +29,16 @@ export default function ArtikelSection({ language }) {
           <div className="hidden md:flex items-center gap-2">
             <span className="h-px w-16 bg-tompak-green-deep/20" />
             <span className="text-xs uppercase tracking-widest text-tompak-green-deep/60">
-              {articles.length} {t.title.split(" ")[0]}
+              {latestArticles.length} {t.title.split(" ")[0]}
             </span>
           </div>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {articles.map((article) => (
+          {latestArticles.map((article) => (
             <Link
-              key={article.id}
-              to={`/artikel/${article.id}`}
+              key={article.publishedAt}
+              to={`/artikel/${article.publishedAt}`}
               className="group relative glass rounded-3xl overflow-hidden shadow-sm transition duration-500 hover:shadow-xl hover:-translate-y-1 hover:border-tompak-green-soft/60 focus-visible:outline-none"
             >
               {/* Thumbnail */}
@@ -55,7 +58,7 @@ export default function ArtikelSection({ language }) {
               {/* Body */}
               <div className="p-6">
                 <p className="text-[11px] uppercase tracking-widest text-tompak-green-deep/60 font-medium">
-                  {article.date}
+                  {formatIndoDate(article.publishedAt)}
                 </p>
                 <h3 className="mt-2 font-display font-bold text-lg text-tompak-green-deep leading-snug group-hover:text-tompak-green-mid transition">
                   {article.title[language] || article.title.ID}

@@ -1,30 +1,77 @@
 // Article data used both on the main page cards and the full article pages.
 // Content is in Indonesian only (as specified: article page does not require translation).
-export const articles = [
+//
+// `publishedAt` is an ISO date (YYYY-MM-DD). It doubles as the URL slug and the
+// sort key, so it must be unique per article. If two articles ever share a
+// publish day, disambiguate by adding a time suffix or a short slug segment.
+
+// how to import image
+// import imageTitle from "../assets/articles/imageTitle.jpg";
+
+// Block-based article content (rich articles use `content` array instead of `body`)
+import { biopest } from "./articleContents/biopest.js";
+import biop from "../assets/Biopest/Bio0.jpg";
+import { villageProfileContent } from "./articleContents/village-profile.js";
+
+const INDO_MONTHS = [
+  "Januari",
+  "Februari",
+  "Maret",
+  "April",
+  "Mei",
+  "Juni",
+  "Juli",
+  "Agustus",
+  "September",
+  "Oktober",
+  "November",
+  "Desember",
+];
+
+// Format ISO date (YYYY-MM-DD) into Indonesian long form: "12 September 2024"
+export const formatIndoDate = (iso) => {
+  if (!iso) return "";
+  const [y, m, d] = iso.split("-");
+  const monthIdx = parseInt(m, 10) - 1;
+  const month = INDO_MONTHS[monthIdx] ?? "";
+  return `${parseInt(d, 10)} ${month} ${y}`;
+};
+
+const rawArticles = [
   {
-    id: "1",
-    date: "12 September 2024",
+    publishedAt: "2024-10-05",
+    slug: "profil-desa-tompak",
     title: {
-      ID: "Menjelajahi Kopi Tompak",
-      EN: "Exploring Tompak Coffee",
+      ID: "Profil Desa Tompak",
+      EN: "Tompak Village Profile",
     },
     snippet: {
-      ID: "Menyusuri kebun kopi di lereng bukit Tompak, tempat setiap biji dipetik dengan tangan dan cerita.",
-      EN: "A walk through the coffee gardens on the slopes of Tompak, where every bean is hand-picked along with its story.",
+      ID: "Mengenal lebih dekat desa Tompak — geografi, sejarah, dan kehidupan masyarakatnya yang kaya akan budaya.",
+      EN: "A closer look at Tompak village — its geography, history, and culturally rich community life.",
     },
     image:
-      "https://images.unsplash.com/photo-1447933601403-0c6688de566e?auto=format&fit=crop&w=1200&q=80",
-    body: [
-      "Pagi baru saja menyingsing ketika kami tiba di kebun kopi milik Pak Rusli, seorang Prawira Tani generasi ketiga. Di antara kabut tipis, deretan pohon kopi arabika menjulur menyusuri kontur bukit — hijau, rapat, dan hidup.",
-      'Setiap pohon di kebun ini punya cerita. Beberapa ditanam oleh kakek Pak Rusli, beberapa lainnya adalah hasil regenerasi belasan tahun terakhir. "Kopi Tompak tumbuh bukan karena kami memaksanya," katanya sambil menyeruput secangkir kopi hitam. "Ia tumbuh karena kami menghormatinya."',
-      "Proses panen di sini masih dilakukan dengan tangan. Buah ceri merah dipetik satu per satu, dipilah, kemudian dijemur di atas para-para bambu selama beberapa hari. Cara ini memakan waktu, tetapi memberi karakter khas pada seduhan akhirnya — aroma tanah hangat dengan sentuhan cokelat pahit dan sedikit manis di ujung lidah.",
-      "Kebun kopi ini juga menjadi rumah bagi ratusan spesies burung dan serangga. Sistem tanam agroforestri yang diadopsi Prawira Tani membuat kopi tumbuh berdampingan dengan pohon peneduh, tanaman rempah, dan buah-buahan lokal. Ekosistem ini bukan hanya menjaga cita rasa kopi, tetapi juga menjaga tanah agar tetap subur untuk generasi berikutnya.",
-      'Menjelang sore, kami duduk di teras kayu sambil menikmati kopi terakhir hari itu. Di kejauhan, kabut mulai turun kembali ke lembah. "Kopi Tompak," kata Pak Rusli pelan, "adalah cara kami bercerita kepada dunia tanpa harus banyak bicara."',
-    ],
+      "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=1200&q=80",
+    category: "Profil",
+    content: villageProfileContent,
   },
   {
-    id: "2",
-    date: "28 Agustus 2024",
+    publishedAt: "2026-08-04",
+    slug: "pengolahan-kakao-tompak",
+    title: {
+      ID: "Potensi Lengkuas untuk Pertanian Kakao Tompak",
+      EN: "potential of Galangal for Tompak Cocoa Farming",
+    },
+    snippet: {
+      ID: "Mengolah rimpang lengkuas menjadi biopestisida sebagai alternatif pengendalian hama Helopeltis pada tanaman kakao sekaligus memanfaatkan potensi lokal untuk mendukung pertanian berkelanjutan di Dusun Tompak.",
+      EN: "Using galangal root to create biopesticides as an alternative for controlling Helopeltis pests in cocoa plants, while utilizing local potential to support sustainable agriculture in Tompak Village.",
+    },
+    image:
+      biop,
+    category: "Komoditas",
+    content: biopest,
+  },
+  {
+    publishedAt: "2024-08-28",
     title: {
       ID: "Prawira Tani: Wajah Muda Tanah Tompak",
       EN: "Prawira Tani: The Young Face of Tompak",
@@ -44,8 +91,7 @@ export const articles = [
     ],
   },
   {
-    id: "3",
-    date: "15 Agustus 2024",
+    publishedAt: "2024-08-15",
     title: {
       ID: "Batu-Batu yang Berbicara",
       EN: "Stones That Speak",
@@ -66,4 +112,12 @@ export const articles = [
   },
 ];
 
-export const getArticleById = (id) => articles.find((a) => a.id === String(id));
+// Sorted newest-first. This is the single source of truth for article order —
+// dashboard slicing and prev/next navigation both rely on it.
+export const articles = [...rawArticles].sort((a, b) =>
+  b.publishedAt.localeCompare(a.publishedAt),
+);
+
+// Look up an article by its ISO publish date (used as the URL slug).
+export const getArticleByDate = (date) =>
+  articles.find((a) => a.publishedAt === date);

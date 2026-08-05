@@ -1,11 +1,16 @@
 import { useParams, Link, useNavigate } from "react-router-dom";
-import { getArticleById, articles } from "../data/articles.js";
+import {
+  getArticleByDate,
+  articles,
+  formatIndoDate,
+} from "../data/articles.js";
 import SharedPageLayout from "../components/SharedPageLayout.jsx";
+import ArticleRenderer from "../components/articles/ArticleRenderer.jsx";
 
 export default function ArticlePage() {
-  const { id } = useParams();
+  const { date } = useParams();
   const navigate = useNavigate();
-  const article = getArticleById(id);
+  const article = getArticleByDate(date);
 
   if (!article) {
     return (
@@ -30,10 +35,15 @@ export default function ArticlePage() {
     );
   }
 
-  // Get previous and next articles for navigation
-  const currentIdx = articles.findIndex((a) => a.id === id);
-  const prev = articles[currentIdx - 1] ?? null;
-  const next = articles[currentIdx + 1] ?? null;
+  // Get previous / next articles for navigation.
+  // `articles` is sorted newest-first, so:
+  //   - the *older* article (Sebelumnya) sits at currentIdx + 1
+  //   - the *newer* article (Berikutnya) sits at currentIdx - 1
+  const currentIdx = articles.findIndex(
+    (a) => a.publishedAt === article.publishedAt,
+  );
+  const prev = articles[currentIdx + 1] ?? null;
+  const next = articles[currentIdx - 1] ?? null;
 
   return (
     <SharedPageLayout
@@ -46,7 +56,7 @@ export default function ArticlePage() {
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {prev ? (
               <Link
-                to={`/artikel/${prev.id}`}
+                to={`/artikel/${prev.publishedAt}`}
                 className="group glass rounded-2xl px-6 py-5 shadow hover:shadow-md transition hover:-translate-y-0.5 flex flex-col gap-1"
               >
                 <span className="text-[10px] uppercase tracking-widest text-tompak-green-deep/60 flex items-center gap-1">
@@ -75,7 +85,7 @@ export default function ArticlePage() {
             )}
             {next ? (
               <Link
-                to={`/artikel/${next.id}`}
+                to={`/artikel/${next.publishedAt}`}
                 className="group glass rounded-2xl px-6 py-5 shadow hover:shadow-md transition hover:-translate-y-0.5 flex flex-col gap-1 sm:text-right"
               >
                 <span className="text-[10px] uppercase tracking-widest text-tompak-green-deep/60 flex items-center gap-1 sm:justify-end">
@@ -145,18 +155,22 @@ export default function ArticlePage() {
           Cerita
         </span>
         <span className="text-xs text-tompak-green-deep/60">
-          {article.date}
+          {formatIndoDate(article.publishedAt)}
         </span>
       </div>
 
-      {/* Body paragraphs */}
-      <div className="prose prose-lg max-w-none text-tompak-green-deep/80 space-y-5">
-        {article.body.map((para, i) => (
-          <p key={i} className="leading-[1.85] text-base md:text-[1.05rem]">
-            {para}
-          </p>
-        ))}
-      </div>
+      {/* Article content — block-based (content) or legacy paragraphs (body) */}
+      {article.content ? (
+        <ArticleRenderer blocks={article.content} />
+      ) : (
+        <div className="prose prose-lg max-w-none text-tompak-green-deep/80 space-y-5">
+          {article.body.map((para, i) => (
+            <p key={i} className="leading-[1.85] text-base md:text-[1.05rem]">
+              {para}
+            </p>
+          ))}
+        </div>
+      )}
     </SharedPageLayout>
   );
 }

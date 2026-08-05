@@ -44,7 +44,7 @@ export default function App() {
       <main className="flex-1">
         <Routes>
           <Route path="/" element={<MainPage language={language} />} />
-          <Route path="/artikel/:id" element={<ArticlePage />} />
+          <Route path="/artikel/:date" element={<ArticlePage />} />
           <Route path="/prawira-tani" element={<PrawiraTaniPage />} />
         </Routes>
       </main>

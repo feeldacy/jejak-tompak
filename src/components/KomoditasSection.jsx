@@ -1,9 +1,9 @@
 import { getT } from "../data/translations.js";
+import kakao from "../assets/comodities/kakao.jpg";
+import rimpang from "../assets/comodities/rimpang.jpg";
 
 const IMAGES = [
-  "https://images.unsplash.com/photo-1442411397904-fa5c5c9ef4a4?auto=format&fit=crop&w=900&q=80", // coffee cherries
-  "https://images.unsplash.com/photo-1611592738068-24efd1b02f78?auto=format&fit=crop&w=900&q=80", // cinnamon
-  "https://images.unsplash.com/photo-1587049352846-4a222e784d38?auto=format&fit=crop&w=900&q=80", // honey
+  kakao, rimpang
 ];
 
 export default function KomoditasSection({ language }) {
@@ -60,9 +60,6 @@ export default function KomoditasSection({ language }) {
                   {item.description}
                 </p>
               </div>
-
-              {/* Accent bar */}
-              <div className="h-1.5 w-full bg-gradient-to-r from-tompak-green-mid via-tompak-green to-tompak-green-mid" />
             </article>
           ))}
         </div>
