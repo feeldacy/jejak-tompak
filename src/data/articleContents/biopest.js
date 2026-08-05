@@ -8,7 +8,7 @@ import biopest4 from "../../assets/Biopest/Bio4.jpg";
 import biopest5 from "../../assets/Biopest/Bio5.jpg";
 import biopest6 from "../../assets/Biopest/Bio6.jpg";
 import biopest7 from "../../assets/Biopest/Bio7.jpg";
-import biopest8 from "../../assets/Biopest/bio8.jpeg";
+import biopest8 from "../../assets/Biopest/bio8.jpg";
 
 const biopest = [
   {
