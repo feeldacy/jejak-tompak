@@ -93,9 +93,7 @@ export const translations = {
       eyebrow: "Prawira",
       title: "Prawira Tani",
       paragraph1:
-        "Prawira Tani adalah para penjaga tanah Tompak — petani muda yang meneruskan tradisi bertani berkelanjutan.",
-      paragraph2:
-        "Mereka menggabungkan kearifan lokal dengan pengetahuan modern, memastikan bahwa setiap panen memberi berkah, bukan hanya bagi manusia, tetapi juga bagi hutan dan sungai di sekitarnya.",
+        "Prawira Tani merupakan usaha yang bergerak di bidang pembibitan dan budidaya kakao yang berlokasi di Desa Giripurwo, Kabupaten Kulon Progo.",
       cta: "Kenali Prawira Tani",
     },
     artikel: {
@@ -127,20 +125,22 @@ export const translations = {
       dokumentasi: "Documentation",
     },
     hero: {
-      title: "Tracing Footprints, Preserving Heritage",
-      subtitle:
-        "A journey through the forests, history, and enduring stories of the people of Tompak.",
-      ctaPrimary: "Explore Stories",
-      ctaSecondary: "About Tompak",
+      title: "Preserving Sacred Footprints, Nurturing Nature’s Heritage",
+      subtitle: "Tompak, where life’s wisdom converges into one path, turning this village into a confluence of faith, nature, and history that will continue to live on.",      
+      ctaPrimary: "Jelajahi Cerita",
+      ctaSecondary: "Tentang Tompak",
     },
     tagline: {
       eyebrow: "Tagline",
-      title: "Fertile Land, Stories That Grow With It",
-      description:
-        "Tompak is home to a community that lives in harmony with nature. Our distribution map shows how culture, commodities, and history are interwoven within a single landscape.",
-      statLabelPopulation: "Residents",
-      statLabelVillages: "Villages",
-      statLabelCommodities: "Main Commodities",
+      title: "On this Prosperous Land, Where History and Life Flourish",
+      paragraph1:
+      "Just like Watu Tompak that cannot be moved, there are places that we never truly leave. A place that remains in our memory, history, and lores that are passed through generations. Tompak is one of them, a village that taught us that coming back isn’t just about returning but to honor our origin, preserve our heritage, and foster our potential. Here, life values meet under a common path, making Tompak the meeting point of nature, faith, and history that will last forevermore.",        
+      paragraph2:
+      "Located among Menoreh Hills, Tompak stands on fertile land, cool breeze, and surrounded by earthly abundance that became the source of livelihood and preserved by the local community. From the life-giving spring to the stretches of fields that support the local economy, nature has become an integral part of everyday life. It is the life that grows alongside nature that forms the character of the people of Tompak.",   
+      luasDusun: "Luas Dusun",      jumlahrt: "Jumlah RT",
+      jumlahrw: "Jumlah RW",
+      jumlahkk: "Jumlah KK",
+      statLabelCommodities: "Komoditas Utama",
     },
     sejarah: {
       eyebrow: "History",

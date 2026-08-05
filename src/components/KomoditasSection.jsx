@@ -1,9 +1,10 @@
 import { getT } from "../data/translations.js";
 import kakao from "../assets/comodities/kakao.jpg";
 import rimpang from "../assets/comodities/rimpang.jpg";
+import pisang from "../assets/comodities/pisang.jpg";
 
 const IMAGES = [
-  kakao, rimpang
+  kakao, rimpang, pisang
 ];
 
 export default function KomoditasSection({ language }) {
