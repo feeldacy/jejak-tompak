@@ -19,9 +19,6 @@ export default function PrawiraTaniSection({ language }) {
             <p className="mt-6 text-tompak-green-deep/80 leading-relaxed text-base md:text-lg">
               {t.paragraph1}
             </p>
-            <p className="mt-4 text-tompak-green-deep/70 leading-relaxed text-sm md:text-base">
-              {t.paragraph2}
-            </p>
 
             <div className="mt-8 flex flex-wrap items-center gap-4">
               <Link
