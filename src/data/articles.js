@@ -10,8 +10,13 @@
 
 // Block-based article content (rich articles use `content` array instead of `body`)
 import { biopest } from "./articleContents/biopest.js";
-import biop from "../assets/Biopest/Bio0.jpg";
 import { villageProfileContent } from "./articleContents/village-profile.js";
+import { sikopong } from "./articleContents/sikopong.js"; 
+import { soescoa } from "./articleContents/soescoa.js";
+import { tehkakao } from "./articleContents/tehkakao.js";
+
+import biop from "../assets/Biopest/Bio0.jpg";
+import sikopongImg from "../assets/sikopong/header-sikopong.jpg";
 
 const INDO_MONTHS = [
   "Januari",
@@ -39,20 +44,19 @@ export const formatIndoDate = (iso) => {
 
 const rawArticles = [
   {
-    publishedAt: "2024-10-05",
-    slug: "profil-desa-tompak",
+    publishedAt: "2026-07-09",
     title: {
-      ID: "Profil Desa Tompak",
-      EN: "Tompak Village Profile",
+      ID: "SIKOPONG: Pemanfaatan Komoditas Lokal Bernilai Jual",
+      EN: "SIKOPONG: Utilizing Local Commodities for Market Value",
     },
     snippet: {
-      ID: "Mengenal lebih dekat desa Tompak — geografi, sejarah, dan kehidupan masyarakatnya yang kaya akan budaya.",
-      EN: "A closer look at Tompak village — its geography, history, and culturally rich community life.",
+      ID: "Pemanfaatan pisang lokal menjadi SIKOPONG, olahan pisang unik yang dikreasikan bersama ibu-ibu PKK Dusun Tompak sebagai upaya meningkatkan nilai jual komoditas lokal dan membuka peluang usaha rumahan.",
+      EN: "Utilizing local bananas to create SIKOPONG, a unique banana-based product developed in collaboration with the PKK mothers of Tompak Village, aiming to enhance the market value of local commodities and open opportunities for home-based businesses.",
     },
     image:
-      "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=1200&q=80",
-    category: "Profil",
-    content: villageProfileContent,
+      sikopongImg,
+    category: "Komoditas",
+    content: sikopong,
   },
   {
     publishedAt: "2026-08-04",
@@ -71,44 +75,34 @@ const rawArticles = [
     content: biopest,
   },
   {
-    publishedAt: "2024-08-28",
+    publishedAt: "2024-07-26",
     title: {
-      ID: "Prawira Tani: Wajah Muda Tanah Tompak",
-      EN: "Prawira Tani: The Young Face of Tompak",
+      ID: "SOESCOA: Peluang Usaha dari Olahan Soes Kering",
+      EN: "SOESCOA: Business Opportunities from Dried Soes Processing",
     },
     snippet: {
-      ID: "Bertemu petani muda yang membawa semangat baru sekaligus menghormati tradisi para pendahulu.",
-      EN: "Meeting young farmers who bring new energy while honoring the traditions of their predecessors.",
+      ID: "Memanfaatkan kakao lokal sebagai isian, tim KKN Kicauan Menoreh mengajak ibu-ibu KWT Dusun Tompak mengolah soes kering menjadi produk camilan yang lezat dan berpotensi dikembangkan sebagai peluang usaha UMKM.",
+      EN: "Utilizing local cocoa beans as filling, the KKN Kicauan Menoreh team invites Dusun Tompak KWT mothers to process dried soes into a delicious snack with potential for development as UMKM business opportunities.",
     },
     image:
-      "https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=1200&q=80",
-    body: [
-      "Prawira Tani bukan sekadar sebutan. Ia adalah komitmen — komitmen dari para petani muda Tompak untuk terus menjaga tanah yang mereka warisi.",
-      "Rata-rata mereka berusia di bawah 35 tahun. Sebagian besar sempat merantau ke kota, menempuh pendidikan, lalu kembali dengan pengetahuan baru. Mereka membawa pupuk organik yang lebih efisien, sistem irigasi tetes untuk area kering, dan mekanisme pencatatan hasil panen berbasis digital.",
-      'Namun, mereka tidak datang untuk mengganti cara-cara lama. Setiap keputusan tetap dibicarakan bersama para tetua di balai desa. "Kami belajar dari yang muda dan yang tua," ujar Nadia, salah satu koordinator Prawira Tani. "Keduanya sama-sama guru."',
-      'Kolaborasi lintas generasi ini melahirkan praktik-praktik menarik. Salah satunya adalah sistem "kalender panen" — perpaduan antara pengamatan cuaca modern dan pembacaan tanda-tanda alam warisan leluhur. Hasilnya, produktivitas naik tanpa mengorbankan kesuburan tanah.',
-      'Di ujung wawancara, kami bertanya apa yang paling membanggakan bagi mereka. Nadia menjawab singkat, "Melihat anak-anak di desa mulai bermimpi jadi petani lagi. Itu tanda bahwa apa yang kami rawat, tumbuh dengan benar."',
-    ],
+      biop,
+    category: "Komoditas",
+    content: soescoa,
   },
   {
     publishedAt: "2024-08-15",
     title: {
-      ID: "Batu-Batu yang Berbicara",
-      EN: "Stones That Speak",
+      ID: "Dari Limbah Menjadi Berkah: Inovasi Teh dari Kulit Ari Biji Kakao",
+      EN: "Dari Limbah Menjadi Berkah: Inovasi Teh dari Kulit Ari Biji Kakao",
     },
     snippet: {
-      ID: "Menelusuri artefak sejarah Tompak dan makna yang tersimpan di balik setiap ukirannya.",
-      EN: "Tracing the historical artifacts of Tompak and the meaning behind every carving.",
+      ID: "Memanfaatkan kakao lokal sebagai isian, tim KKN Kicauan Menoreh mengajak ibu-ibu KWT Dusun Tompak mengolah soes kering menjadi produk camilan yang lezat dan berpotensi dikembangkan sebagai peluang usaha UMKM.",
+      EN: "Utilizing local cocoa beans as filling, the KKN Kicauan Menoreh team invites Dusun Tompak KWT mothers to process dried soes into a delicious snack with potential for development as UMKM business opportunities.",
     },
     image:
-      "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=1200&q=80",
-    body: [
-      "Di sudut desa Tompak berdiri sebuah batu tua. Tingginya sekitar satu setengah meter, permukaannya penuh dengan ukiran halus yang mulai memudar oleh lumut dan waktu.",
-      'Bagi sebagian orang, batu ini hanyalah artefak. Namun bagi masyarakat Tompak, batu ini adalah "buku pertama" yang menceritakan siapa mereka dan dari mana mereka berasal.',
-      "Menurut Pak Tarmizi, seorang penjaga situs, ukiran pada batu ini menggambarkan siklus tanam yang diwariskan turun-temurun: musim membuka lahan, musim menanam, musim panen, dan musim istirahat. Setiap ukiran menjadi pengingat bahwa tanah pun butuh napas.",
-      'Beberapa tahun terakhir, tim arkeolog dan komunitas lokal bekerja sama untuk mendokumentasikan batu ini secara digital. Foto tiga dimensi, catatan pengukuran, hingga kisah-kisah lisan seputar batu ini kini tersimpan dengan rapi — sebuah upaya agar generasi mendatang bisa tetap "mendengar" apa yang dibisikkan batu-batu ini.',
-      "Kami pulang dengan satu kesadaran: sejarah Tompak tidak hanya ada di buku pelajaran, tetapi juga di setiap alur ukiran batu tua ini — yang, jika kita mau berhenti sejenak, ternyata benar-benar bisa berbicara.",
-    ],
+      biop,
+    category: "Komoditas",
+    content: tehkakao,
   },
 ];
 
