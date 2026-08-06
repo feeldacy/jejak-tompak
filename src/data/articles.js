@@ -16,7 +16,7 @@ import { soescoa } from "./articleContents/soescoa.js";
 import { tehkakao } from "./articleContents/tehkakao.js";
 import { digitalmarketing } from "./articleContents/digitalmarketing.js";
 
-import biop from "../assets/Biopest/Bio0.jpg";
+import biop from "../assets/comodities/kakao.jpg";
 import sikopongImg from "../assets/sikopong/header-sikopong.jpg";
 import tehkakaoImg from "../assets/tehkakao/tehkakao-header.jpg";
 
