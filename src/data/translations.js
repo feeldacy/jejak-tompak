@@ -47,7 +47,7 @@ export const translations = {
         sejarah: {
           label: "Tentang Tompak",
           p1: "Di antara luasnya perbukitan Menoreh yang menjadi perbatasan Jawa Tengah dan Daerah Istimewa Yogyakarta, terdapat sebuah desa yang menyimpan cerita yang diwarisi secara turun-temurun dan memiliki cita-cita yang cukup besar.",
-          p2: 'Desa Tompak, yang secara administratif berada di Kalurahan Giripurwo, Kecamatan Girimulyo, Kabupaten Kulon Progo, Daerah Istimewa Yogyakarta, lahir sekitar tahun 1900-an dan hingga kini tetap menjaga budaya serta tradisi leluhurnya, yang sampai saat ini dijadikan bekal masyarakat Tompak untuk melangkah maju ke depannya.',
+          p2: "Desa Tompak, yang secara administratif berada di Kalurahan Giripurwo, Kecamatan Girimulyo, Kabupaten Kulon Progo, Daerah Istimewa Yogyakarta, lahir sekitar tahun 1900-an dan hingga kini tetap menjaga budaya serta tradisi leluhurnya, yang sampai saat ini dijadikan bekal masyarakat Tompak untuk melangkah maju ke depannya.",
         },
         asalUsul: {
           label: "Asal Usul Nama Tompak",
@@ -58,19 +58,18 @@ export const translations = {
           label: "Kisah Watu Tompak dan Empat Kesatria",
           p1: 'Sebagai sebuah ikon desa, Watu Tompak memiliki kisah perjalanannya tersendiri. Diceritakan, ada empat kesatria yang sedang melakukan perjalanan, yaitu Ki Joko Lelono, Ki Joko Desono, Ki Dipontani, dan Ki Dipo Karyo. Dalam perjalanannya, mereka berhenti di sebuah batu menonjol yang kini disebut Watu Jendul untuk bertirakat atau beribadah. Sebelum beribadah, keempat kesatria itu mencari sumber air untuk mensucikan diri ke arah utara, dan menemukan mata air yang disebut "Padasan"',
           p2: 'Keesokan paginya, mereka menemukan sebuah batu pecah yang saling bertumpuk, yang dipercaya dijaga oleh makhluk gaib, lalu mereka gelindingkan bongkahan batu paling atas ke jurang di dekatnya. Setelah kejadian itu, mereka melanjutkan perjalanan ke utara, di mana mereka menemukan sebuah mata air yang kemudian dinamai "Belik Suko". Sesampainya di sebuah tempat bernama Watu Muncen, mereka kembali beristirahat dan menyempatkan diri beribadah di batu tersebut serta bersuci di mata air "Belik Sengon" yang tidak jauh dari situ.',
-          p3: 'Tidak lama setelah melaksanakan ibadah, mereka mendengar suara dari arah batu yang sebelumnya digelindingkan. Mereka pun terkejut melihat batu yang mereka gulingkan telah kembali menumpuk di tempat semula. Dari sinilah batu itu diberi nama Watu Tompak, sebagaimana disepakati oleh keempat kesatria tersebut, dan Ki Joko Desono, salah satu di antara mereka, memutuskan untuk mengabdi di tempat ini. Kisah perjalanan empat kesatria inilah yang menjadi pondasi keimanan yang diwariskan dan terus dipegang teguh oleh warga Desa Tompak hingga saat ini.',
+          p3: "Tidak lama setelah melaksanakan ibadah, mereka mendengar suara dari arah batu yang sebelumnya digelindingkan. Mereka pun terkejut melihat batu yang mereka gulingkan telah kembali menumpuk di tempat semula. Dari sinilah batu itu diberi nama Watu Tompak, sebagaimana disepakati oleh keempat kesatria tersebut, dan Ki Joko Desono, salah satu di antara mereka, memutuskan untuk mengabdi di tempat ini. Kisah perjalanan empat kesatria inilah yang menjadi pondasi keimanan yang diwariskan dan terus dipegang teguh oleh warga Desa Tompak hingga saat ini.",
         },
         filosofi: {
           label: "Jiwa Agraris",
-          p1: 'Selain itu, dengan kekayaan alam yang dimilikinya, Tompak dikenal sebagai desa dengan jiwa agraris yang kuat. Bertani bukan sekadar mata pencaharian, melainkan bagian dari gaya hidup yang tak lepas dari keseharian warganya. Dari generasi ke generasi, tanah-tanah yang berada di lereng Menoreh ini diolah dengan penuh ketekunan, menghasilkan sumber daya yang menjadi sumber kehidupan sekaligus identitas desa.',
-          p2: 'Semangat dan solidaritas yang dimiliki warganya, dari yang tua hingga para pemudanya, membuat kekayaan yang dimiliki Desa Tompak, mulai dari sejarah, budaya, dan alamnya yang berlimpah dapat tetap terjaga dan terlestarikan dengan baik. Cita-cita besar yang dimiliki warganya pun menjadi alasan untuk terus memajukan dan mengharumkan nama Desa Tompak. "Topong Rame" atau "Siapa Mendapat Kesulitan Harus Kamu Tolong".'
+          p1: "Selain itu, dengan kekayaan alam yang dimilikinya, Tompak dikenal sebagai desa dengan jiwa agraris yang kuat. Bertani bukan sekadar mata pencaharian, melainkan bagian dari gaya hidup yang tak lepas dari keseharian warganya. Dari generasi ke generasi, tanah-tanah yang berada di lereng Menoreh ini diolah dengan penuh ketekunan, menghasilkan sumber daya yang menjadi sumber kehidupan sekaligus identitas desa.",
+          p2: 'Semangat dan solidaritas yang dimiliki warganya, dari yang tua hingga para pemudanya, membuat kekayaan yang dimiliki Desa Tompak, mulai dari sejarah, budaya, dan alamnya yang berlimpah dapat tetap terjaga dan terlestarikan dengan baik. Cita-cita besar yang dimiliki warganya pun menjadi alasan untuk terus memajukan dan mengharumkan nama Desa Tompak. "Topong Rame" atau "Siapa Mendapat Kesulitan Harus Kamu Tolong".',
         },
       },
     },
     komoditas: {
       title: "KOMODITAS TOMPAK",
-      description:
-        "Tiga komoditas utama yang tumbuh subur di tanah Tompak:",
+      description: "Tiga komoditas utama yang tumbuh subur di tanah Tompak:",
       items: [
         {
           title: "Kakao",
@@ -126,7 +125,8 @@ export const translations = {
     },
     hero: {
       title: "Preserving Sacred Footprints, Nurturing Nature’s Heritage",
-      subtitle: "Tompak, where life’s wisdom converges into one path, turning this village into a confluence of faith, nature, and history that will continue to live on.",      
+      subtitle:
+        "Tompak, where life’s wisdom converges into one path, turning this village into a confluence of faith, nature, and history that will continue to live on.",
       ctaPrimary: "Jelajahi Cerita",
       ctaSecondary: "Tentang Tompak",
     },
@@ -134,10 +134,11 @@ export const translations = {
       eyebrow: "Tagline",
       title: "On this Prosperous Land, Where History and Life Flourish",
       paragraph1:
-      "Just like Watu Tompak that cannot be moved, there are places that we never truly leave. A place that remains in our memory, history, and lores that are passed through generations. Tompak is one of them, a village that taught us that coming back isn’t just about returning but to honor our origin, preserve our heritage, and foster our potential. Here, life values meet under a common path, making Tompak the meeting point of nature, faith, and history that will last forevermore.",        
+        "Just like Watu Tompak that cannot be moved, there are places that we never truly leave. A place that remains in our memory, history, and lores that are passed through generations. Tompak is one of them, a village that taught us that coming back isn’t just about returning but to honor our origin, preserve our heritage, and foster our potential. Here, life values meet under a common path, making Tompak the meeting point of nature, faith, and history that will last forevermore.",
       paragraph2:
-      "Located among Menoreh Hills, Tompak stands on fertile land, cool breeze, and surrounded by earthly abundance that became the source of livelihood and preserved by the local community. From the life-giving spring to the stretches of fields that support the local economy, nature has become an integral part of everyday life. It is the life that grows alongside nature that forms the character of the people of Tompak.",   
-      luasDusun: "Luas Dusun",      jumlahrt: "Jumlah RT",
+        "Located among Menoreh Hills, Tompak stands on fertile land, cool breeze, and surrounded by earthly abundance that became the source of livelihood and preserved by the local community. From the life-giving spring to the stretches of fields that support the local economy, nature has become an integral part of everyday life. It is the life that grows alongside nature that forms the character of the people of Tompak.",
+      luasDusun: "Luas Dusun",
+      jumlahrt: "Jumlah RT",
       jumlahrw: "Jumlah RW",
       jumlahkk: "Jumlah KK",
       statLabelCommodities: "Komoditas Utama",
@@ -156,50 +157,49 @@ export const translations = {
         { letter: "K", word: "Kecukupan (Sufficiency)" },
       ],
       tabs: {
+        sejarah: {
+          label: "About Tompak",
+          p1: "Among the vast Menoreh hills bordering Central Java and Yogyakarta lies a village that carries stories passed down through generations.",
+          p2: "Tompak Village, administratively part of Giripurwo, Girimulyo, Kulon Progo, was founded around the 1900s and still preserves the culture and traditions of its ancestors, which continue to guide the people of Tompak as they move forward.",
+        },
         asalUsul: {
-          label: "Origins & Name",
-          p1: "Among the vast Menoreh hills bordering Central Java and Yogyakarta lies a village that carries stories passed down through generations. Tompak Village, administratively part of Giripurwo, Girimulyo, Kulon Progo, was founded around the 1900s and still preserves the culture and traditions of its ancestors.",
-          p2: 'The name "Tompak" stems from "Tumpak" or "Tumpang", describing two boulders of Watu Tompak stacked upon each other. As the population around Watu Tompak grew, the community chose Ki Joyodiharjo as their first leader. The area was then known as Dusun Tumpak, and only officially became "Tompak" in 1992, named by Mbah Besut, an artist from Jogja, after the village won a provincial competition.',
+          label: "Origins of the Name",
+          p1: 'The name "Tompak" stems from "Tumpak" or "Tumpang", describing two boulders of Watu Tompak stacked upon each other. Each letter of "Tompak" also carries its own meaning, broadly signifying the spirit to keep moving, working, and doing good until sufficiency is achieved.',
+          p2: 'As the population around Watu Tompak grew, the community chose Ki Joyodiharjo as their first leader. The area was then known as Dusun Tumpak, and only officially became "Tompak" in 1992, named by Pak Besut, an artist from Jogja, after the village won a provincial competition. This moment marked the official change from Dusun Tumpak to Tompak, as it is known today.',
         },
-        legenda: {
-          label: "Legend of the 4 Knights",
-          story:
-            "Legend tells of four knights from different kingdoms who once passed through the Menoreh land. They met at a large stacked stone — Watu Tompak — and vowed to protect this land. Each knight left a mark that became a sacred site: Watu Jendul as the first post, Padasan as the source of cleansing, Belik Suko as the spring of joy, and Watu Muncen as the marker stone. It is said that if one of the stones is moved from its place, it will return by itself the next day — a reminder that the land of Tompak can never be separated from the soul of its guardians.",
-          locations: [
-            "Watu Jendul",
-            "Padasan",
-            "Belik Suko",
-            "Watu Muncen",
-            "Belik Sengon",
-          ],
+        watutompak: {
+          label: "Legend of Watu Tompak & the Four Knights",
+          p1: 'Legend tells of four knights — Ki Joko Lelono, Ki Joko Desono, Ki Dipontani, and Ki Dipo Karyo — who once journeyed through the Menoreh land. They stopped at a protruding stone now called Watu Jendul to pray. Before worship, they sought water to purify themselves to the north, finding a spring called "Padasan".',
+          p2: 'The next morning, they found a split stone stacked upon itself, believed to be guarded by spirits, and rolled the topmost boulder into a nearby ravine. Afterwards, they continued north and found a spring they named "Belik Suko". Upon reaching Watu Muncen, they rested and purified themselves at the nearby spring "Belik Sengon".',
+          p3: "Shortly after praying, they heard a sound from the direction of the rolled stone. To their astonishment, the boulder had returned to its original stacked position. From this, the stone was named Watu Tompak. Ki Joko Desono chose to devote himself to this place. This legend became the foundation of faith that has been passed down and upheld by the people of Tompak to this day.",
         },
-        agraris: {
+        filosofi: {
           label: "Agrarian Spirit",
-          content:
-            "On the slopes of the Menoreh hills, the people of Tompak live from the land — cultivating coffee, cinnamon, and guarding the forests that shelter them. The ethos of mutual aid and the spirit of \u201cTopong Rame\u201d has been passed down for generations: whoever faces hardship must be helped. Today, the young Prawira Tani blend local wisdom with modern knowledge, carrying Tompak's agrarian ideals toward a sustainable future.",
+          p1: "With its natural riches, Tompak is known as a village with a strong agrarian spirit. Farming is not merely a livelihood but a way of life inseparable from daily existence. From generation to generation, the land on the slopes of Menoreh has been cultivated with diligence, producing resources that serve as both a source of life and the village's identity.",
+          p2: 'The spirit and solidarity of its people, from elders to youth, ensures that Tompak\'s heritage — its history, culture, and abundant nature — remains well preserved. The grand aspiration of its people drives them to keep advancing and honoring the name of Tompak Village. "Topong Rame" — Whoever Faces Hardship Must Be Helped.',
         },
       },
     },
     komoditas: {
-      eyebrow: "Riches of the Land",
+      eyebrow: "TOMPAK COMMODITIES",
       title: "Commodities",
       description:
         "Three key commodities that grow and thrive on the land of Tompak.",
       items: [
         {
-          title: "Tompak Coffee",
+          title: "Cocoa",
           description:
-            "Arabica beans with a warm earthy aroma and hints of dark chocolate.",
+            "Grown in the fertile Menoreh soil, Tompak cocoa produces high-quality cocoa beans with a distinctive flavor.",
         },
         {
-          title: "Cinnamon",
+          title: "Rhizome Crops",
           description:
-            "Fragrant bark that has become the signature spice of the Tompak highlands.",
+            "Natural resources such as galangal, ginger, kencur, temulawak, and turmeric grow abundantly in Tompak and are commonly referred to as “empon-empon” by the local community.",
         },
         {
-          title: "Wild Honey",
+          title: "Bananas",
           description:
-            "Wild honey from forest bees, protected by the indigenous community.",
+            "Thriving in local residents’ gardens, bananas are a staple crop used both as food and as a source of livelihood for the community.",
         },
       ],
     },
@@ -207,9 +207,7 @@ export const translations = {
       eyebrow: "Prawira",
       title: "Prawira Tani",
       paragraph1:
-        "Prawira Tani are the guardians of Tompak — young farmers who carry forward the tradition of sustainable agriculture.",
-      paragraph2:
-        "They blend local wisdom with modern knowledge, ensuring that every harvest becomes a blessing — not only for people, but for the forests and rivers around them.",
+        "Prawira Tani is a business engaged in cocoa seedling production and cultivation, located in Giripurwo Village, Kulon Progo Regency.",
       cta: "Meet Prawira Tani",
     },
     artikel: {

@@ -26,18 +26,12 @@ export default function ArtikelSection({ language }) {
               {t.description}
             </p>
           </div>
-          <div className="hidden md:flex items-center gap-2">
-            <span className="h-px w-16 bg-tompak-green-deep/20" />
-            <span className="text-xs uppercase tracking-widest text-tompak-green-deep/60">
-              {latestArticles.length} {t.title.split(" ")[0]}
-            </span>
-          </div>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {latestArticles.map((article) => (
+          {latestArticles.map((article, index) => (
             <Link
-              key={article.publishedAt}
+              key={`${article.publishedAt}-${index}`}
               to={`/artikel/${article.publishedAt}`}
               className="group relative glass rounded-3xl overflow-hidden shadow-sm transition duration-500 hover:shadow-xl hover:-translate-y-1 hover:border-tompak-green-soft/60 focus-visible:outline-none"
             >
@@ -45,7 +39,7 @@ export default function ArtikelSection({ language }) {
               <div className="relative aspect-[16/10] overflow-hidden">
                 <img
                   src={article.image}
-                  alt={article.title[language] || article.title.ID}
+                  alt={article.title.ID}
                   loading="lazy"
                   className="h-full w-full object-cover transition duration-700 group-hover:scale-110 group-hover:blur-[2px]"
                 />
@@ -61,10 +55,10 @@ export default function ArtikelSection({ language }) {
                   {formatIndoDate(article.publishedAt)}
                 </p>
                 <h3 className="mt-2 font-display font-bold text-lg text-tompak-green-deep leading-snug group-hover:text-tompak-green-mid transition">
-                  {article.title[language] || article.title.ID}
+                  {article.title.ID}
                 </h3>
                 <p className="mt-3 text-sm text-tompak-green-deep/70 leading-relaxed line-clamp-3">
-                  {article.snippet[language] || article.snippet.ID}
+                  {article.snippet.ID}
                 </p>
                 <div className="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-tompak-green-mid">
                   {t.readMore}
