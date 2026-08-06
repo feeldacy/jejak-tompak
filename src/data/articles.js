@@ -14,9 +14,11 @@ import { villageProfileContent } from "./articleContents/village-profile.js";
 import { sikopong } from "./articleContents/sikopong.js"; 
 import { soescoa } from "./articleContents/soescoa.js";
 import { tehkakao } from "./articleContents/tehkakao.js";
+import { digitalmarketing } from "./articleContents/digitalmarketing.js";
 
 import biop from "../assets/Biopest/Bio0.jpg";
 import sikopongImg from "../assets/sikopong/header-sikopong.jpg";
+import tehkakaoImg from "../assets/tehkakao/tehkakao-header.jpg";
 
 const INDO_MONTHS = [
   "Januari",
@@ -96,13 +98,28 @@ const rawArticles = [
       EN: "Dari Limbah Menjadi Berkah: Inovasi Teh dari Kulit Ari Biji Kakao",
     },
     snippet: {
-      ID: "Memanfaatkan kakao lokal sebagai isian, tim KKN Kicauan Menoreh mengajak ibu-ibu KWT Dusun Tompak mengolah soes kering menjadi produk camilan yang lezat dan berpotensi dikembangkan sebagai peluang usaha UMKM.",
-      EN: "Utilizing local cocoa beans as filling, the KKN Kicauan Menoreh team invites Dusun Tompak KWT mothers to process dried soes into a delicious snack with potential for development as UMKM business opportunities.",
+      ID: "Dari kulit ari kakao menjadi secangkir teh beraroma cokelat! Tim KKN Kicauan Menoreh memperkenalkan KakaoTea kepada warga RW 35 sebagai inovasi olahan sekaligus peluang usaha dari hasil samping produksi kakao.",
+      EN: "From cocoa pod skins to a cup of chocolate-aroma tea! The KKN Kicauan Menoreh team introduces KakaoTea to the residents of RW 35 as an innovative processing idea and business opportunity from cocoa production byproducts.",
+    },
+    image:
+      tehkakaoImg,
+    category: "Komoditas",
+    content: tehkakao,
+  },
+  {
+    publishedAt: "2024-08-15",
+    title: {
+      ID: "Kenalkan Digital Marketing dan Branding, Tim KKN Kicauan Menoreh Ajak Warga Tompak Melek Pemasaran Digital",
+      EN: "Introducing Digital Marketing and Branding, KKN Kicauan Menoreh Encourages Tompak Residents to Embrace Digital Marketing",
+    },
+    snippet: {
+      ID: "Tim KKN Kicauan Menoreh memperkenalkan digital marketing dan branding kepada warga Dusun Tompak sebagai strategi untuk memperluas jangkauan pemasaran produk UMKM. Melalui edukasi ini, warga diajak memanfaatkan media digital, marketplace, dan strategi branding untuk membangun identitas produk yang kuat, meningkatkan daya saing, serta menjangkau lebih banyak konsumen.",
+      EN: "Introducing digital marketing and branding to the residents of Tompak Village as a strategy to expand the reach of UMKM products. Through this education, residents are encouraged to utilize digital media, marketplaces, and branding strategies to build strong product identities, enhance competitiveness, and reach more consumers.",
     },
     image:
       biop,
     category: "Komoditas",
-    content: tehkakao,
+    content: digitalmarketing,
   },
 ];
 

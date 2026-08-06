@@ -9,6 +9,8 @@ import biopest5 from "../../assets/Biopest/Bio5.jpg";
 import biopest6 from "../../assets/Biopest/Bio6.jpg";
 import biopest7 from "../../assets/Biopest/Bio7.jpg";
 import biopest8 from "../../assets/Biopest/bio8.jpg";
+import biopest9 from "../../assets/Biopest/bio9.jpg";
+
 
 const biopest = [
   {
@@ -38,10 +40,10 @@ const biopest = [
   },
   {
     type: "image",
-    src: biopest1,
-    alt: "Biji kakao yang sedang difermentasi di dalam kotak kayu",
+    src: biopest9,
+    alt: "Rimpang Lengkuas",
     caption:
-      "Proses fermentasi kakao berlangsung selama 5-7 hari dalam kotak kayu tradisional.",
+      "Rimpang lengkuas yang tumbuh di pekarangan warga.",
   },
   {
     type: "heading",
