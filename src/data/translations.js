@@ -51,7 +51,7 @@ export const translations = {
         },
         asalUsul: {
           label: "Asal Usul Nama Tompak",
-          p1: 'Nama "Tompak" sendiri berakar dari kata "Tumpak" atau "Tumpang", yang menggambarkan dua bongkahan Watu Tompak yang saling bertumpuk. Setiap huruf dari "Tompak" juga memiliki maknanya tersendiri yang secara garis besar bermakna semangat untuk terus bergerak, bekerja, dan berbuat baik hingga berkecukupan.',
+          p1: 'Nama "Tompak" sendiri berakar dari kata "Tumpak" atau "Tumpang", yang menggambarkan dua bongkahan Watu Tompak yang saling bertumpuk. Setiap huruf dari "Tompak" juga memiliki maknanya tersendiri: T = Trengginas, O = Obah, M = Makaryo, P = Pakarti, A = Amrih, K = Kecukupan — yang secara garis besar bermakna semangat untuk terus bergerak, bekerja, dan berbuat baik hingga berkecukupan.',
           p2: 'Seiring bertambahnya waktu, penduduk di sekitar Watu Tompak semakin bertambah, sehingga masyarakat pun mengangkat salah satu penduduk menjadi pemimpin pertama mereka, yaitu Ki Joyodiharjo. Wilayah ini kemudian dikenal sebagai Dusun Tumpak. Nama tersebut baru resmi dipatenkan menjadi "Tompak" pada tahun 1992 oleh Pak Besut, seorang tokoh Budayawan Jogja, setelah desa ini memenangkan lomba tingkat provinsi pada saat itu. Momen inilah yang menandai pergantian nama secara resmi dari Dusun Tumpak menjadi Tompak, seperti yang dikenal hingga sekarang.',
         },
         watutompak: {
@@ -164,7 +164,7 @@ export const translations = {
         },
         asalUsul: {
           label: "Origins of the Name",
-          p1: 'The name "Tompak" stems from "Tumpak" or "Tumpang", describing two boulders of Watu Tompak stacked upon each other. Each letter of "Tompak" also carries its own meaning, broadly signifying the spirit to keep moving, working, and doing good until sufficiency is achieved.',
+          p1: 'The name "Tompak" stems from "Tumpak" or "Tumpang", describing two boulders of Watu Tompak stacked upon each other. Each letter of "Tompak" also carries its own meaning: T = Trengginas (agile), O = Obah (move), M = Makaryo (work), P = Pakarti (act), A = Amrih (strive), K = Kecukupan (sufficiency) — broadly signifying the spirit to keep moving, working, and doing good until sufficiency is achieved.',
           p2: 'As the population around Watu Tompak grew, the community chose Ki Joyodiharjo as their first leader. The area was then known as Dusun Tumpak, and only officially became "Tompak" in 1992, named by Pak Besut, an artist from Jogja, after the village won a provincial competition. This moment marked the official change from Dusun Tumpak to Tompak, as it is known today.',
         },
         watutompak: {
