@@ -1,6 +1,6 @@
 // Article content: Cocoa Processing in Tompak
 // Block-based content structure for the ArticleRenderer
-import biopest0 from "../../assets/Biopest/Bio0.jpg";
+import biopest0 from "../../assets/Biopest/Bio1.jpg";
 import biopest1 from "../../assets/Biopest/Bio1.jpg";
 import biopest2 from "../../assets/Biopest/Bio2.jpg";
 import biopest3 from "../../assets/Biopest/Bio3.jpg";
