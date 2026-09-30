@@ -13,7 +13,8 @@ import { createServer } from "http";
 import { readFileSync, writeFileSync, mkdirSync, existsSync } from "fs";
 import { resolve, join, dirname } from "path";
 import { fileURLToPath } from "url";
-import puppeteer from "puppeteer";
+import puppeteer from "puppeteer-core";
+import chromium from "@sparticuz/chromium";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const DIST = resolve(__dirname, "../dist");
@@ -84,10 +85,11 @@ async function prerender() {
 
   const server = await startServer();
   const browser = await puppeteer.launch({
-    headless: true,
-    protocolTimeout: 60000, // Increase timeout to 60 seconds
+    args: chromium.args,
+    defaultViewport: chromium.defaultViewport,
+    executablePath: await chromium.executablePath(),
+    headless: chromium.headless,
   });
-
   const page = await browser.newPage();
 
   for (const route of ROUTES) {
